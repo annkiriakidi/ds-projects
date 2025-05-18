@@ -18,7 +18,7 @@ Humidity3pm = st.slider('Вологість о 15:00 (%)', 0, 100, 50)
 Pressure9am = st.number_input('Тиск о 9:00 (гПа)', 900.0, 1100.0, 1012.0)
 RainToday = st.selectbox('Чи йшов дощ сьогодні?', ['Yes', 'No'])
 
-model_pipeline = joblib.load('./random_forest_model.pkl')
+model_pipeline = joblib.load('random_forest_model.pkl')
 
 input_data = pd.DataFrame({
     'Location': [Location],
