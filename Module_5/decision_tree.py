@@ -44,4 +44,5 @@ model_pipeline = Pipeline([
 
 model_pipeline.fit(X_train, y_train)
 
-joblib.dump(model_pipeline, 'random_forest_model.pkl')
+# joblib.dump(model_pipeline, 'random_forest_model.pkl')
+joblib.dump(model_pipeline, 'random_forest_model.pkl', compress=('zlib', 3))
